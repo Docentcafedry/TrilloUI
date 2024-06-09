@@ -64,6 +64,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: var(--grey-light-1);
+  border-bottom: 1px solid var(--grey-dark);
 }
 
 .header-logo {
@@ -223,6 +224,96 @@ body {
   font-size: 1.2rem;
   color: var(--grey-light);
   margin-bottom: 2rem;
+}
+
+.gallery {
+  height: 25%;
+  width: 100%;
+  display: flex;
+}
+
+.hotel-image {
+  flex: 1;
+  width: 100%;
+}
+
+.overview {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hotel-name__header {
+  font-size: 2.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.star-rating {
+  flex: 1;
+  margin-right: auto;
+}
+
+.star-list {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hotel-location {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+.hotel-location:focus {
+  animation: pulsate 0.4s infinite;
+}
+
+.hotel-rating {
+  padding: 1rem 1rem;
+  align-self: stretch;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.2rem;
+}
+
+.common-rating {
+  font-size: 2.2rem;
+}
+
+.votes-count {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.icon-star {
+  height: 2rem;
+  stroke: var(--primary);
+}
+
+.icon-location {
+  height: 2rem;
+  stroke: var(--primary);
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
