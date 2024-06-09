@@ -53,8 +53,13 @@ body {
 
 .navigation {
   flex: 0 0 15%;
+  background-color: rgb(50, 50, 50);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main-content {
   flex: 1;
+  height: 80rem;
 }
