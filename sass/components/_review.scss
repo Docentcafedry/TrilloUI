@@ -1,0 +1,145 @@
+.review-content {
+  display: flex;
+  padding: 4rem 3rem;
+  gap: 3rem;
+  background-color: var(--grey-light);
+}
+
+.description {
+  flex: 0 0 60%;
+  background-color: #fff;
+  box-shadow: 0 2rem 6rem rgb(0, 0, 0, 0.1);
+  padding: 3rem 3rem;
+}
+
+.paragraph {
+  font-size: 1.4rem;
+  line-height: 1.6;
+
+  &:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+
+  &:last-of-type {
+    margin-bottom: 3rem;
+  }
+}
+
+.features-list {
+  padding: 3rem 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+  border-top: 1px solid var(--grey-light-3);
+  border-bottom: 1px solid var(--grey-light-3);
+
+  &__item {
+    flex: 0 0 50%;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__item::before {
+    content: "";
+    display: inline-block;
+    background-color: var(--primary);
+    height: 1.5rem;
+    width: 1.5rem;
+    mask-image: url(../../img/chevron-thin-right.svg);
+    mask-size: cover;
+  }
+}
+
+.recommended {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &_text {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: var(--grey-dark-3);
+  }
+
+  &_images {
+    display: flex;
+
+    &__user {
+      box-sizing: initial;
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      border: 3px solid #fff;
+
+      &:not(:last-child) {
+        margin-right: -1rem;
+      }
+    }
+  }
+}
+
+.users-reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.review {
+  padding: 3rem;
+  background-color: #fff;
+  box-shadow: 0 2rem 6rem rgb(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  &_text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+
+  &_user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__photo {
+      height: 4rem;
+      border-radius: 50%;
+    }
+
+    &_data {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      &-name {
+        font-size: 1.2rem;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      &-date {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+    }
+
+    &_rating {
+      font-size: 1.6rem;
+      color: var(--primary);
+      font-weight: 700;
+    }
+  }
+}
