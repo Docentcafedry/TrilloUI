@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary: #eb2f64;
   --primary-light: #ff3366;
@@ -499,6 +500,7 @@ body {
 }
 
 .review {
+  position: relative;
   padding: 3rem;
   background-color: #fff;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.1);
@@ -542,6 +544,16 @@ body {
   font-size: 1.6rem;
   color: var(--primary);
   font-weight: 700;
+}
+
+.review::before {
+  position: absolute;
+  content: "“";
+  font-size: 13rem;
+  display: inline-block;
+  top: -4.5rem;
+  left: 0;
+  color: var(--grey-light-2);
 }
 
 .btn-simple {
