@@ -12,3 +12,31 @@
   border-bottom: 1px solid var(--primary);
   cursor: pointer;
 }
+
+.proposition-button:link,
+.proposition-button:visited {
+  overflow: hidden;
+  position: relative;
+
+  background-image: linear-gradient(
+    to right bottom,
+    var(--primary-light),
+    var(--primary-dark)
+  );
+  padding: 1.5rem 7rem;
+  text-decoration: none;
+  color: var(--grey-light);
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+
+// .proposition-button:active,
+// .proposition-button:hover {
+//   &__start_span {
+//     transform: translateY(-100%);
+//   }
+
+//   &__tail_span {
+//     top: 0;
+//   }
+// }

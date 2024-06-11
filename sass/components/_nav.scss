@@ -8,10 +8,14 @@
     stroke: currentColor;
     height: 1.8rem;
   }
+
+  @media screen and (max-width: 43.7rem) {
+    flex: 1;
+  }
 }
 
 .menu_list {
-  margin-top: 3.6rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -19,9 +23,14 @@
   color: var(--grey-light);
   font-size: 1.4rem;
 
+  @media screen and (max-width: 43.7rem) {
+    flex-direction: unset;
+  }
+
   &__item {
     position: relative;
     padding: 1rem 1rem;
+    flex: 1;
 
     &::before {
       content: "";
@@ -67,4 +76,8 @@
   font-size: 1.2rem;
   color: var(--grey-light);
   margin-bottom: 2rem;
+
+  @media screen and (max-width: 43.7rem) {
+    display: none;
+  }
 }
